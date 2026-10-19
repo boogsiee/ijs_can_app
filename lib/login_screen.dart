@@ -23,7 +23,6 @@ class _LoginScreenState extends State<LoginScreen> {
     setState(() => _isLoading = false);
 
     if (role != null) {
-      // Navigate based on role
       if (role == 'admin' || role == 'vendor') {
         Navigator.pushReplacementNamed(context, '/dashboard');
       } else if (role == 'student') {
@@ -41,7 +40,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('School Canteen & Merch Login')),
+      appBar: AppBar(title: const Text('IJShop')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
